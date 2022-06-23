@@ -1,12 +1,9 @@
 <body>
-    <div class="text-center">
-        <div class="card-body">
-            <h5 class="card-title h1">Quién soy?</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>
-    </div>
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="singleSlideOffset" [noWrap]="noWrap" [interval]="0"
+        [startFromIndex]="0">
+        <slide *ngFor="let slide of slides; let index=index">
+            <img [src]="slide.image" alt="image slide" class="text-center" style="display: block; width: 95%;">
+            <p class="h5 text-center">Sesión {{index + 1}}</p>
+        </slide>
+    </carousel>
 </body>

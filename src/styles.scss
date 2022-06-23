@@ -1,0 +1,117 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+:root {
+    --color-blue: rgb(0, 0, 175);
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.progressbar {
+    color: inherit;
+    text-decoration: none;
+}
+
+.progressbar {
+    background: linear-gradient(to right, transparent, transparent),
+        linear-gradient(to right, #e1f31d, #80cd99, #81b8e3, #fc73b8, #d63447, #6003a9);
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.progressbar:hover {
+    background-size: 0 3px, 100% 3px;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ffdfc9;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #cd8b3b;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #d1a672;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: auto;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.zoom {
+    transition: transform 0.3s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.spin {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

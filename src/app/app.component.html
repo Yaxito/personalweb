@@ -1,10 +1,17 @@
 <div class="sidebar">
   <div class="text-center mt-4"><img class="zoom" height="180" src="../assets/png/Donut.png">
-    <p class="h3">Yaxito</p>
+    <p class="h3">{{'name' | translate}}</p>
   </div>
-  <a routerLink="/home" routerLinkActive="active" class="progressbar">Home</a>
-  <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">About Me</a>
-  <a routerLink="/contact" routerLinkActive="active" class="progressbar">Contact</a>
+  <a routerLink="/home" routerLinkActive="active" class="progressbar">{{'home' | translate}}</a>
+  <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme' | translate}}</a>
+  <a routerLink="/contact" routerLinkActive="active" class="progressbar">{{'contact' | translate}}</a>
+  <a style="pointer-events: stroke;"><select class="progressbar w-100" #selectedLang (change)="switchLang(selectedLang.value)">
+      <option *ngFor="let language of translate.getLangs()" [value]="language"
+        [selected]="language === translate.currentLang">
+        {{ language == "es" ? "🇪🇸 Español" : "🇬🇧 English"}}
+      </option>
+    </select></a>
+
 </div>
 
 <div class="content">

@@ -1,4 +1,18 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+    font-family: "PokemonSolid";
+    src: local("PokemonSolid"), url(assets/fonts/PokemonSolid.ttf) format("truetype");
+}
+@font-face {
+    font-family: "PokemonClassic";
+    src: local("PokemonClassic"), url(assets/fonts/PokemonClassic.ttf) format("truetype");
+}
+* {
+    font-family: PokemonClassic;
+}
+.pokemon-solid {
+    font-family: PokemonSolid;
+}
 :root {
     --color-blue: rgb(0, 0, 175);
 }

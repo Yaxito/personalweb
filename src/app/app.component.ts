@@ -9,11 +9,45 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class AppComponent {
   title = 'Yaxito';
+  randomImageNumber = 0;
+  randomLogoNumber = 0;
+  randomImageSrc = "";
+  randomLogoSrc = "";
   constructor(public translate: TranslateService) {
     translate.addLangs(['es', 'en']);
     translate.setDefaultLang('es');
   }
+  ngOnInit(): void {
+
+    this.randomImage();
+    this.randomLogo();
+
+  }
   switchLang(lang: string) {
     this.translate.use(lang);
+  }
+
+  randomInteger(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  randomImage() {
+    this.randomImageNumber = this.randomInteger(0, 2);
+    if (this.randomImageNumber == 0) {
+      this.randomImageSrc = "../assets/png/4stars.png";
+    } else if (this.randomImageNumber == 1) {
+      this.randomImageSrc = "../assets/png/pokeball.png";
+    } else if (this.randomImageNumber == 2) {
+      this.randomImageSrc = "../assets/png/donutmordido.png";
+    }
+  }
+  randomLogo() {
+    this.randomLogoNumber = this.randomInteger(0, 2);
+    if (this.randomLogoNumber == 0) {
+      this.randomLogoSrc = "../assets/png/face1.png";
+    } else if (this.randomLogoNumber == 1) {
+      this.randomLogoSrc = "../assets/png/face2.png";
+    } else if (this.randomLogoNumber == 2) {
+      this.randomLogoSrc = "../assets/png/face3.png";
+    }
   }
 }

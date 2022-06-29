@@ -31,13 +31,15 @@ export class AppComponent {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   randomImage() {
-    this.randomImageNumber = this.randomInteger(0, 2);
+    this.randomImageNumber = this.randomInteger(0, 3);
     if (this.randomImageNumber == 0) {
       this.randomImageSrc = "../assets/png/4stars.png";
     } else if (this.randomImageNumber == 1) {
       this.randomImageSrc = "../assets/png/pokeball.png";
     } else if (this.randomImageNumber == 2) {
-      this.randomImageSrc = "../assets/png/donutmordido.png";
+      this.randomImageSrc = "../assets/png/donut.png";
+    } else if (this.randomImageNumber == 3) {
+      this.randomImageSrc = "../assets/png/luffy.png";
     }
   }
   randomLogo() {

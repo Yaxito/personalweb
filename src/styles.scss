@@ -116,9 +116,20 @@ div.content {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite;
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
+}
+
+.youtube {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    -webkit-animation: spin 30s linear infinite reverse;
+    -moz-animation: spin 30s linear infinite reverse;
+    animation: spin 30s linear infinite reverse;
+    cursor: pointer;
 }
 
 @-webkit-keyframes spin {

@@ -8,7 +8,7 @@
   <a class="my-auto"><select class="w-100" #selectedLang (change)="switchLang(selectedLang.value)">
       <option *ngFor="let language of translate.getLangs()" [value]="language"
         [selected]="language === translate.currentLang">
-        {{ language == "es" ? "Español" : "English"}}
+        {{ language == "es" ? "🇪🇸 Español" : "🇬🇧 English"}}
       </option>
     </select></a>
 </div>

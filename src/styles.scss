@@ -53,7 +53,7 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #ffdbae;
+    background-color: #a6b316;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -67,12 +67,12 @@ body {
 }
 
 .sidebar a.active {
-    background-color: #cd8b3b;
+    background-color: #ddef1d;
     color: white;
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: #d1a672;
+    background-color: #abb637;
     color: white;
 }
 

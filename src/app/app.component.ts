@@ -37,7 +37,7 @@ export class AppComponent {
     } else if (this.randomImageNumber == 1) {
       this.randomImageSrc = "../assets/png/pokeball.png";
     } else if (this.randomImageNumber == 2) {
-      this.randomImageSrc = "../assets/png/donut.png";
+      this.randomImageSrc = "../assets/png/Donut.png";
     } else if (this.randomImageNumber == 3) {
       this.randomImageSrc = "../assets/png/luffy.png";
     }

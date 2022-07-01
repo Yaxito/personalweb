@@ -1,9 +1,10 @@
-<div class="sidebar">
+<nav class="sidebar">
   <div class="text-center mt-4"><img class="zoom" height="180" src="{{randomLogoSrc}}">
     <p class="h1 title-font-1">{{'name' | translate}}</p>
   </div>
   <a routerLink="/home" routerLinkActive="active" class="progressbar">{{'home' | translate}}</a>
   <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme' | translate}}</a>
+  <a routerLink="/knowledges" routerLinkActive="active" class="progressbar">{{'knowledges' | translate}}</a>
   <a routerLink="/contact" routerLinkActive="active" class="progressbar">{{'contact' | translate}}</a>
   <a class="my-auto"><select class="w-100" #selectedLang (change)="switchLang(selectedLang.value)">
       <option *ngFor="let language of translate.getLangs()" [value]="language"
@@ -11,16 +12,16 @@
         {{ language == "es" ? "🇪🇸 Español" : "🇬🇧 English"}}
       </option>
     </select></a>
-</div>
+</nav>
 
 <div class="content">
   <router-outlet></router-outlet>
 </div>
 
 <div class="spin">
-  <img (click)="randomImageManual();" height="80px" src="{{randomImageSrc}}">
+  <img (click)="randomImageManual();" height="70px" src="{{randomImageSrc}}">
 </div>
 
 <div class="youtube">
-  <img (click)="goToLink('https://www.youtube.com/c/EvolutionCycling')" height="60px" src="../assets/png/youtube.png">
+  <img (click)="goToLink('https://www.youtube.com/c/EvolutionCycling')" height="70px" src="../assets/png/youtube.png">
 </div>

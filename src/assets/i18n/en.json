@@ -1,10 +1,15 @@
 {
     "home": "Home",
     "aboutme": "About me",
+    "knowledges": "Knowledges",
     "contact": "Contact",
     "name": "Yaxito",
+    "whatiknow": "What I Know?",
+    "whatiknow1": "If you ask me about fitness or nutrition, whatever you want. After more than 10 years and having performed various functions, I know quite a lot about everything in general about this sector.",
+    "whatiknow2": "The IT world is relatively new to me. I've gotten a certificate of higher education while working in the gym and during those two years, I've learned almost everything on my own through various personal projects.",
+    "whatiknow3": "In the future, i would like to continue learning about development of applications for mobile devices and web applications.",
     "whoiam": "Who I Am?",
-    "whoiam1": "f",
-    "whoiam2": "Frase2",
-    "whoiam3": "Frase3"
+    "whoiam1": "I am a personal trainer, Indoor Cycling instructor, Physical and Directed Activities Technician and Multiplatform Application Development Technician.",
+    "whoiam2": "I like to practice almost any sport, but don't make me run, that's for cowards. In case you haven't figured it out yet, I also like video games and anime.",
+    "whoiam3": "I am always starting a personal project to be able to learn new things."
 }

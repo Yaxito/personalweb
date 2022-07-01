@@ -12,6 +12,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ContactComponent,
     AboutmeComponent,
-    FooterComponent
+    FooterComponent,
+    KnowledgesComponent
   ],
   imports: [
     BrowserModule,

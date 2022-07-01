@@ -1,10 +1,15 @@
 {
     "home": "Inicio",
     "aboutme": "Sobre mí",
+    "knowledges": "Conocimientos",
     "contact": "Contacto",
     "name": "Yaxito",
+    "whatiknow": "Qué sé?",
+    "whatiknow1": "Si me preguntas por fitness o nutrición, lo que quieras. Después de más de 10 años y de haber desempeñado diversas funciones, sé bastante de todo en general sobre este sector.",
+    "whatiknow2": "El mundo IT es relativamente nuevo para mí. Me he sacado un grado superior mientras trabajaba en el gimnasio y durante esos dos años, he aprendido casi todo por mi cuenta a través de diversos proyectos personales.",
+    "whatiknow3": "De aquí en adelante, me gustaría seguir formándome en el desarrollo de aplicaciones para dispositivos móviles y aplicaciones web.",
     "whoiam": "Quién Soy?",
     "whoiam1": "Soy entrenador personal, instructor de Ciclo Indoor, TSAFAD y Técnico en Desarrollo de Aplicaciones Multiplataforma.",
-    "whoiam2": "Me gusta practicar casi cualquier deporte, pero no me pongas a correr que eso es de cobardes.",
-    "whoiam3": "Frase3"
+    "whoiam2": "Me gusta practicar casi cualquier deporte, pero no me pongas a correr que eso es de cobardes. Por si todavía no te habías dado cuenta, también me gustan los videojuegos y el anime.",
+    "whoiam3": "Siempre estoy empezando algún proyecto personal para poder aprender cosas nuevas."
 }

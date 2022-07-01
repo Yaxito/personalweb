@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { reduce } from 'rxjs';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +18,7 @@ export class AppComponent {
     translate.addLangs(['es', 'en']);
     translate.setDefaultLang('es');
   }
+
   ngOnInit(): void {
 
     this.randomImage();

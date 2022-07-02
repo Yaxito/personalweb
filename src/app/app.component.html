@@ -5,6 +5,7 @@
   <a routerLink="/home" routerLinkActive="active" class="progressbar">{{'home' | translate}}</a>
   <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme' | translate}}</a>
   <a routerLink="/knowledges" routerLinkActive="active" class="progressbar">{{'knowledges' | translate}}</a>
+  <a routerLink="/experience" routerLinkActive="active" class="progressbar">{{'experience' | translate}}</a>
   <a routerLink="/contact" routerLinkActive="active" class="progressbar">{{'contact' | translate}}</a>
   <a class="my-auto"><select class="w-100" #selectedLang (change)="switchLang(selectedLang.value)">
       <option *ngFor="let language of translate.getLangs()" [value]="language"

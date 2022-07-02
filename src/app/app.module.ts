@@ -13,6 +13,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { KnowledgesComponent } from './components/knowledges/knowledges.componen
     ContactComponent,
     AboutmeComponent,
     FooterComponent,
-    KnowledgesComponent
+    KnowledgesComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

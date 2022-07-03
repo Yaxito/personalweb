@@ -6,7 +6,6 @@
   <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme' | translate}}</a>
   <a routerLink="/knowledges" routerLinkActive="active" class="progressbar">{{'knowledges' | translate}}</a>
   <a routerLink="/experience" routerLinkActive="active" class="progressbar">{{'experience' | translate}}</a>
-  <a routerLink="/contact" routerLinkActive="active" class="progressbar">{{'contact' | translate}}</a>
   <a class="my-auto"><select class="w-100" #selectedLang (change)="switchLang(selectedLang.value)">
       <option *ngFor="let language of translate.getLangs()" [value]="language"
         [selected]="language === translate.currentLang">
@@ -16,13 +15,15 @@
 </nav>
 
 <div class="content">
-  <router-outlet></router-outlet>
+  <router-outlet>
+    <div class="source-code ms-2">
+      <p>{{"sourcecode" | translate}}<a href="https://github.com/Yaxito/personalweb" target="_blank"
+        rel="nofollow noopener noreferrer"> GitHub</a></p>
+    </div>
+  </router-outlet>
 </div>
 
 <div class="spin">
   <img (click)="randomImageManual();" height="70px" src="{{randomImageSrc}}">
 </div>
 
-<div class="youtube">
-  <img (click)="goToLink('https://www.youtube.com/c/EvolutionCycling')" height="70px" src="../assets/png/youtube.png">
-</div>

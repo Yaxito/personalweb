@@ -121,14 +121,27 @@ div.content {
     animation: spin 15s linear infinite;
 }
 
-.youtube {
+.source-code {
     display: block;
     position: fixed;
-    bottom: 10px;
-    left: 10px;
-    -webkit-animation: spin 30s linear infinite reverse;
-    -moz-animation: spin 30s linear infinite reverse;
-    animation: spin 30s linear infinite reverse;
+    bottom: 3px;
+    font-size: smaller;
+    a{
+        text-decoration: none;
+        color: #a6b316;
+    }
+}
+
+.spin-media {
+    -webkit-animation: spin 60s linear infinite;
+    -moz-animation: spin 60s linear infinite;
+    animation: spin 60s linear infinite;
+    cursor: pointer;
+}
+.spin-media-reverse {
+    -webkit-animation: spin 60s linear infinite reverse;
+    -moz-animation: spin 60s linear infinite reverse;
+    animation: spin 60s linear infinite reverse;
     cursor: pointer;
 }
 

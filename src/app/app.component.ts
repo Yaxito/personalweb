@@ -19,6 +19,8 @@ export class AppComponent {
     translate.setDefaultLang('es');
   }
 
+  
+
   ngOnInit(): void {
 
     this.randomImage();

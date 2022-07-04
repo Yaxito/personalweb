@@ -82,7 +82,38 @@ div.content {
     height: 100%;
 }
 
-@media screen and (max-width: 700px) {
+#burguer-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    background-color: #a6b316;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: black;
+    text-decoration: none;
+    background-color: #ddef1d;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #1e2125;
+    background-color: #abb637;
+}
+
+@media screen and (max-width: 750px) {
+    #sidebar-toogle {
+        display: none;
+    }
+    #burguer-menu {
+        display: flex;
+        align-items: center;
+    }
     .sidebar {
         width: 100%;
         height: auto;
@@ -90,6 +121,7 @@ div.content {
     }
     .sidebar a {
         float: left;
+        color: red;
     }
     div.content {
         margin-left: 0;
@@ -126,7 +158,7 @@ div.content {
     position: fixed;
     bottom: 3px;
     font-size: smaller;
-    a{
+    a {
         text-decoration: none;
         color: #a6b316;
     }
@@ -144,6 +176,11 @@ div.content {
     animation: spin 60s linear infinite reverse;
     cursor: pointer;
 }
+
+.card-transparent {
+    background-color: transparent;
+    border-color: transparent;
+  }
 
 @-webkit-keyframes spin {
     100% {

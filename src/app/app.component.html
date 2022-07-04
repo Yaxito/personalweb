@@ -1,29 +1,63 @@
 <nav class="sidebar">
-  <div class="text-center mt-4"><img class="zoom" height="180" src="{{randomLogoSrc}}">
-    <p class="h1 title-font-1">{{'name' | translate}}</p>
+  <div class="text-center mt-4"><img title="Logo" style="cursor: pointer;" (click)="randomLogo()" class="zoom"
+      height="180" src="{{randomLogoSrc}}">
+    <p style="cursor: default;" title="{{'name' | translate}}" class="h1 title-font-1">Yaxito</p>
   </div>
-  <a routerLink="/home" routerLinkActive="active" class="progressbar">{{'home' | translate}}</a>
-  <a routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme' | translate}}</a>
-  <a routerLink="/knowledges" routerLinkActive="active" class="progressbar">{{'knowledges' | translate}}</a>
-  <a routerLink="/experience" routerLinkActive="active" class="progressbar">{{'experience' | translate}}</a>
-  <a class="my-auto"><select class="w-100" #selectedLang (change)="switchLang(selectedLang.value)">
-      <option *ngFor="let language of translate.getLangs()" [value]="language"
-        [selected]="language === translate.currentLang">
-        {{ language == "es" ? "🇪🇸 Español" : "🇬🇧 English"}}
-      </option>
-    </select></a>
+  <div id="sidebar-toogle">
+    <a title="{{'home' | translate}}" routerLink="/home" routerLinkActive="active" class="progressbar">{{'home' |
+      translate}}</a>
+    <a title="{{'aboutme' | translate}}" routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme'
+      | translate}}</a>
+    <a title="{{'knowledges' | translate}}" routerLink="/knowledges" routerLinkActive="active"
+      class="progressbar">{{'knowledges' | translate}}</a>
+    <a title="{{'experience' | translate}}" routerLink="/experience" routerLinkActive="active"
+      class="progressbar">{{'experience' | translate}}</a>
+    <a title="{{'language' | translate}}" class="my-auto"><select class="w-100" #selectedLang
+        (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language == "es" ? "🇪🇸 Español" : "🇬🇧 English"}}
+        </option>
+      </select></a>
+  </div>
+  <div id="burguer-menu" class="btn-group mt-4 mb-4" dropdown container="body">
+    <button title="Español" class="mx-auto card card-transparent"><img role="button" (click)="switchLang('es')"
+        height="30px" src="../assets/png/pixel-art-spain.png"></button>
+    <button title="Menu" id="button-animated" dropdownToggle type="button" class="card card-transparent mx-auto mb-2"
+      aria-controls="dropdown-animated"><img height="40px" src="../assets/png/burguer-menu.png">
+    </button>
+    <button title="English" class="mx-auto card card-transparent"><img role="button" (click)="switchLang('en')"
+        height="30px" src="../assets/png/pixel-art-uk.png"></button>
+
+    <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mx-auto" role="menu"
+      aria-labelledby="button-animated">
+      <li title="{{'home' | translate}}" role="menuitem"><a routerLink="/home" routerLinkActive="active"
+          class="progressbar dropdown-item">{{'home' |
+          translate}}</a></li>
+      <li title="{{'aboutme' | translate}}" role="menuitem"><a routerLink="/aboutme" routerLinkActive="active"
+          class="progressbar dropdown-item">{{'aboutme' | translate}}</a></li>
+      <li title="{{'knowledges' | translate}}" role="menuitem"><a routerLink="/knowledges" routerLinkActive="active"
+          class="progressbar dropdown-item">{{'knowledges' |
+          translate}}</a>
+      </li>
+      <li title="{{'experience' | translate}}" role="menuitem"><a routerLink="/experience" routerLinkActive="active"
+          class="progressbar dropdown-item">{{'experience' |
+          translate}}</a>
+      </li>
+    </ul>
+  </div>
+
 </nav>
 
 <div class="content">
   <router-outlet>
     <div class="source-code ms-2">
-      <p>{{"sourcecode" | translate}}<a href="https://github.com/Yaxito/personalweb" target="_blank"
-        rel="nofollow noopener noreferrer"> GitHub</a></p>
+      <p title="GitHub">{{"sourcecode" | translate}}<a href="https://github.com/Yaxito/personalweb" target="_blank"
+          rel="nofollow noopener noreferrer"> GitHub</a></p>
     </div>
   </router-outlet>
 </div>
 
 <div class="spin">
-  <img (click)="randomImageManual();" height="70px" src="{{randomImageSrc}}">
+  <img title="Hobbies" style="cursor: pointer;" (click)="randomImageManual();" height="70px" src="{{randomImageSrc}}">
 </div>
-

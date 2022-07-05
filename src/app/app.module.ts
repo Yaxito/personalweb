@@ -12,6 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { HashLocationStrategy, LocationChangeListener, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -37,10 +38,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HttpClientModule
 
   ],
-  providers: [HttpClientModule],
+  providers: [HttpClientModule, {
+    provide: LocationStrategy, useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }

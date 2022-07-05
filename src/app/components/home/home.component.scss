@@ -1,25 +1,25 @@
 body {
-    background-image: linear-gradient(30deg, #fafafa 12%, transparent 12.5%, transparent 87%, #fafafa 87.5%, #fafafa),
-        linear-gradient(150deg, #fafafa 12%, transparent 12.5%, transparent 87%, #fafafa 87.5%, #fafafa),
-        linear-gradient(30deg, #fafafa 12%, transparent 12.5%, transparent 87%, #fafafa 87.5%, #fafafa),
-        linear-gradient(150deg, #fafafa 12%, transparent 12.5%, transparent 87%, #fafafa 87.5%, #fafafa),
+    background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+        linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+        linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+        linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
         linear-gradient(
             60deg,
-            rgba(250, 250, 250, 0.5) 25%,
+            rgba(255, 255, 255, 0.5) 25%,
             transparent 25.5%,
             transparent 75%,
-            rgba(250, 250, 250, 0.5) 75%,
-            rgba(250, 250, 250, 0.5)
+            rgba(255, 255, 255, 0.5) 75%,
+            rgba(255, 255, 255, 0.5)
         ),
         linear-gradient(
             60deg,
-            rgba(250, 250, 250, 0.5) 25%,
+            rgba(255, 255, 255, 0.5) 25%,
             transparent 25.5%,
             transparent 75%,
-            rgba(250, 250, 250, 0.5) 75%,
-            rgba(250, 250, 250, 0.5)
+            rgba(255, 255, 255, 0.5) 75%,
+            rgba(255, 255, 255, 0.5)
         );
-    background-size: 68px 119px;
-    background-position: 0 0, 0 0, 34px 59.5px, 34px 59.5px, 0 0, 34px 59.5px;
-    background-color: #f0f0f0;
+    background-size: 44px 77px;
+    background-position: 0 0, 0 0, 22px 38.5px, 22px 38.5px, 0 0, 22px 38.5px;
+    background-color: rgba(166, 179, 22, 0.23);
 }

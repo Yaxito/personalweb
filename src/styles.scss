@@ -37,6 +37,12 @@ body {
     text-decoration: none;
 }
 
+.progressbar-home {
+    color: inherit;
+    text-decoration: none;
+    background-color: #abb637;
+}
+
 .progressbar {
     background: linear-gradient(to right, transparent, transparent),
         linear-gradient(to right, #e1f31d, #80cd99, #81b8e3, #fc73b8, #d63447, #6003a9);

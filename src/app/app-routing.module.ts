@@ -5,13 +5,9 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 
-const routes: Routes = [{
-  path: '',
-  pathMatch: 'full',
-  redirectTo: 'home',
-},
+const routes: Routes = [
 {
-  path: 'home',
+  path: '',
   component: HomeComponent,
 },
 {

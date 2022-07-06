@@ -4,7 +4,8 @@
     <p style="cursor: default;" title="{{'name' | translate}}" class="h1 title-font-1">Yaxito</p>
   </div>
   <div id="sidebar-toogle">
-    <a title="{{'home' | translate}}" routerLink="" class="progressbar progressbar-home">{{'home' |
+    <a title="{{'home' | translate}}" routerLink="/home" routerLinkActive="active"
+      class="progressbar progressbar-home">{{'home' |
       translate}}</a>
     <a title="{{'aboutme' | translate}}" routerLink="/aboutme" routerLinkActive="active" class="progressbar">{{'aboutme'
       | translate}}</a>
@@ -30,7 +31,8 @@
         height="30px" src="assets\png\pixel-art-uk.png"></button>
     <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mx-auto" role="menu"
       aria-labelledby="button-animated">
-      <li title="{{'home' | translate}}" role="menuitem"><a routerLink="" class="progressbar dropdown-item">{{'home' |
+      <li title="{{'home' | translate}}" role="menuitem"><a routerLink="/home" routerLinkActive="active"
+          class="progressbar dropdown-item">{{'home' |
           translate}}</a></li>
       <li title="{{'aboutme' | translate}}" role="menuitem"><a routerLink="/aboutme" routerLinkActive="active"
           class="progressbar dropdown-item">{{'aboutme' | translate}}</a></li>

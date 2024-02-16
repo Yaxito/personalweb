@@ -22,5 +22,19 @@
   "whoiam": "Quién Soy?",
   "whoiam1": "Soy entrenador personal, instructor de Ciclo Indoor, TSAFAD y Técnico en Desarrollo de Aplicaciones Multiplataforma.",
   "whoiam2": "Me gusta practicar casi cualquier deporte, pero no me pongas a correr que eso es de cobardes. Por si todavía no te habías dado cuenta, también me gustan los videojuegos y el anime.",
-  "whoiam3": "Siempre estoy empezando algún proyecto personal para poder aprender cosas nuevas."
+  "whoiam3": "Siempre estoy empezando algún proyecto personal para poder aprender cosas nuevas.",
+  "privacy": "Política de Privacidad",
+  "privacyp1": "Gracias por utilizar nuestros servicios. En [Nombre de tu aplicación/servicio], nos tomamos la privacidad de nuestros usuarios muy en serio. A continuación, te proporcionamos información sobre cómo manejamos tus datos personales:",
+  "privacyp2": "Recopilación de Datos",
+  "privacyp2Content": "No recopilamos ni almacenamos ningún dato personal identificable. Tu privacidad es nuestra prioridad, y no estamos interesados en recopilar información personal de nuestros usuarios.",
+  "privacyp3": "Uso de AdMob",
+  "privacyp3Content": "[Si estás utilizando AdMob u otro servicio de publicidad, aquí debes proporcionar información sobre cómo esos servicios manejan la privacidad. Consulta la documentación de AdMob o el servicio publicitario que estés utilizando para obtener detalles específicos.]",
+  "privacyp4": "Cookies y Tecnologías Similares",
+  "privacyp4Content": "No utilizamos cookies ni tecnologías similares para rastrear tu actividad en nuestra aplicación.",
+  "privacyp5": "Terceros",
+  "privacyp5Content": "No compartimos información con terceros, ya que no recopilamos información personal.",
+  "privacyp6": "Cambios en la Política de Privacidad",
+  "privacyp6Content": "Nos reservamos el derecho de actualizar nuestra política de privacidad en el futuro. Cualquier cambio será notificado a través de la aplicación.",
+  "privacyp7": "Contacto",
+  "privacyp7Content": "Si tienes preguntas o inquietudes sobre nuestra política de privacidad, no dudes en ponerte en contacto con nosotros a través de [tu dirección de contacto].\n\nGracias por confiar en [Nombre de tu aplicación/servicio].\n\nFecha de última actualización: [Fecha]"
 }

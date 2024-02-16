@@ -22,5 +22,19 @@
   "whoiam": "Who I Am?",
   "whoiam1": "I am a personal trainer, Indoor Cycling instructor, Physical and Directed Activities Technician and Multiplatform Application Development Technician.",
   "whoiam2": "I like to practice almost any sport, but don't make me run, that's for cowards. In case you haven't figured it out yet, I also like video games and anime.",
-  "whoiam3": "I am always starting a personal project to be able to learn new things."
+  "whoiam3": "I am always starting a personal project to be able to learn new things.",
+  "privacy": "Privacy Policy",
+  "privacyp1": "Thank you for using our services. At [Name of your application/service], we take the privacy of our users very seriously. Below, we provide you with information on how we handle your personal data:",
+  "privacyp2": "Data Collection",
+  "privacyp2Content": "We do not collect or store any personally identifiable information. Your privacy is our priority, and we are not interested in collecting personal information from our users.",
+  "privacyp3": "Use of AdMob",
+  "privacyp3Content": "[If you are using AdMob or another advertising service, you should provide information on how those services handle privacy. Refer to the documentation of AdMob or the advertising service you are using for specific details.]",
+  "privacyp4": "Cookies and Similar Technologies",
+  "privacyp4Content": "We do not use cookies or similar technologies to track your activity in our application.",
+  "privacyp5": "Third Parties",
+  "privacyp5Content": "We do not share information with third parties, as we do not collect personal information.",
+  "privacyp6": "Changes to the Privacy Policy",
+  "privacyp6Content": "We reserve the right to update our privacy policy in the future. Any changes will be notified through the application.",
+  "privacyp7": "Contact",
+  "privacyp7Content": "If you have questions or concerns about our privacy policy, feel free to contact us at [your contact address].\n\nThank you for trusting [Name of your application/service].\n\nLast updated: [Date]"
 }

@@ -13,6 +13,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HashLocationStrategy, LocationChangeListener, LocationStrategy } from '@angular/common';
+import { TrisergiComponent } from './components/trisergi/trisergi.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HashLocationStrategy, LocationChangeListener, LocationStrategy } from '
     HomeComponent,
     AboutmeComponent,
     KnowledgesComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    TrisergiComponent
   ],
   imports: [
     BrowserModule,

@@ -1,205 +1,214 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @font-face {
-    font-family: "PositiveSystem";
-    src: local("PositiveSystem"), url(assets/fonts/PositiveSystem.otf) format("truetype");
+  font-family: "PositiveSystem";
+  src: local("PositiveSystem"),
+    url(assets/fonts/PositiveSystem.otf) format("truetype");
 }
+
 @font-face {
-    font-family: "PokemonClassic";
-    src: local("PokemonClassic"), url(assets/fonts/PokemonClassic.ttf) format("truetype");
+  font-family: "Pixel";
+  src: local("Pixel"),
+    url(assets/fonts/PixelifySans-Medium.ttf) format("truetype");
 }
-@font-face {
-    font-family: "Pokemon";
-    src: local("Pokemon"), url(assets/fonts/PokemonSolid.ttf) format("truetype");
-}
+
 * {
-    font-family: PokemonClassic;
+  font-family: Pixel;
+  font-size: large;
 }
 .title-font {
-    font-family: Pokemon;
+  font-family: Pixel;
 }
 .title-font-1 {
-    font-family: PositiveSystem;
+  font-family: PositiveSystem;
 }
 :root {
-    --color-blue: rgb(0, 0, 175);
+  --color-blue: rgb(0, 0, 175);
 }
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .progressbar {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .progressbar-home {
-    color: inherit;
-    text-decoration: none;
-    background-color: #abb637;
+  color: inherit;
+  text-decoration: none;
+  background-color: #abb637;
 }
 
 .progressbar {
-    background: linear-gradient(to right, transparent, transparent),
-        linear-gradient(to right, #e1f31d, #80cd99, #81b8e3, #fc73b8, #d63447, #6003a9);
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+  background: linear-gradient(to right, transparent, transparent),
+    linear-gradient(
+      to right,
+      #e1f31d,
+      #80cd99,
+      #81b8e3,
+      #fc73b8,
+      #d63447,
+      #6003a9
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 
 .progressbar:hover {
-    background-size: 0 3px, 100% 3px;
+  background-size: 0 3px, 100% 3px;
 }
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 220px;
-    background-color: #a6b316;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  background-color: #a6b316;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .sidebar a.active {
-    background-color: #ddef1d;
-    color: rgb(0, 0, 0);
+  background-color: #ddef1d;
+  color: rgb(0, 0, 0);
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: #abb637;
-    color: white;
+  background-color: #abb637;
+  color: white;
 }
 
 div.content {
-    margin-left: 220px;
-    padding: auto;
-    height: 100%;
+  margin-left: 220px;
+  padding: auto;
+  height: 100%;
 }
 
 #burguer-menu {
-    display: none;
+  display: none;
 }
 
 .dropdown-menu.show {
-    display: block;
-    width: 100vw;
-    text-align: center;
-    background-color: #a6b316;
+  display: block;
+  width: 100vw;
+  text-align: center;
+  background-color: #a6b316;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: black;
-    text-decoration: none;
-    background-color: #ddef1d;
+  color: black;
+  text-decoration: none;
+  background-color: #ddef1d;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #1e2125;
-    background-color: #abb637;
+  color: #1e2125;
+  background-color: #abb637;
 }
 
 @media screen and (max-width: 750px) {
-    #sidebar-toogle {
-        display: none;
-    }
-    #burguer-menu {
-        display: flex;
-        align-items: center;
-    }
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-        color: red;
-    }
-    div.content {
-        margin-left: 0;
-    }
+  #sidebar-toogle {
+    display: none;
+  }
+  #burguer-menu {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+    color: red;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .zoom {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .zoom:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .spin {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    -webkit-animation: spin 15s linear infinite;
-    -moz-animation: spin 15s linear infinite;
-    animation: spin 15s linear infinite;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
 }
 
 .source-code {
-    display: block;
-    position: fixed;
-    bottom: 3px;
-    font-size: smaller;
-    a {
-        text-decoration: none;
-        color: #a6b316;
-    }
+  display: block;
+  position: fixed;
+  bottom: 3px;
+  font-size: smaller;
+  a {
+    text-decoration: none;
+    color: #a6b316;
+  }
 }
 
 .spin-media {
-    -webkit-animation: spin 60s linear infinite;
-    -moz-animation: spin 60s linear infinite;
-    animation: spin 60s linear infinite;
-    cursor: pointer;
+  -webkit-animation: spin 60s linear infinite;
+  -moz-animation: spin 60s linear infinite;
+  animation: spin 60s linear infinite;
+  cursor: pointer;
 }
 .spin-media-reverse {
-    -webkit-animation: spin 60s linear infinite reverse;
-    -moz-animation: spin 60s linear infinite reverse;
-    animation: spin 60s linear infinite reverse;
-    cursor: pointer;
+  -webkit-animation: spin 60s linear infinite reverse;
+  -moz-animation: spin 60s linear infinite reverse;
+  animation: spin 60s linear infinite reverse;
+  cursor: pointer;
 }
 
 .card-transparent {
-    background-color: transparent;
-    border-color: transparent;
-  }
+  background-color: transparent;
+  border-color: transparent;
+}
 
 @-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @-moz-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }

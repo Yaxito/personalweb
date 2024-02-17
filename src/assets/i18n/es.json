@@ -25,7 +25,7 @@
   "whoiam3": "Siempre estoy empezando algún proyecto personal para poder aprender cosas nuevas.",
   "privacyp1": "Política de Privacidad y Recopilación de Datos",
   "privacyp2": "No recopilamos ni almacenamos ningún dato personal identificable. Tu privacidad es nuestra prioridad, y no estamos interesados en recopilar información personal de nuestros usuarios.",
-  "privacyp3": "Únicamente utilizamos la información de seguimiento del rendimiento de la aplicación proporcionada por Google para mejorar la aplicación. Esta aplicación solo utiliza Internet para poder mostrarte la lista de clases virtuales.",
+  "privacyp3": "Esta aplicación solo utiliza Internet para poder mostrarte la lista de clases virtuales y únicamente utilizamos la información de seguimiento del rendimiento de la aplicación proporcionada por Google para mejorar la aplicación. ",
   "privacyp4": "Google Analytics",
   "privacyp5": "Esta aplicación utiliza Google Analytics para ayudarnos a analizar cómo utilizas la aplicación. Esto nos ayuda a mejorar este producto. Gracias a Google Analytics, sabemos cuánto tiempo usas la aplicación, qué tipo de dispositivo estás utilizando, de dónde eres y un poco más. Todo esto se utiliza para mejorar la aplicación.",
   "privacyp6": "Lee más sobre ",
@@ -35,8 +35,8 @@
   "privacyp10": "El uso de la cookie DoubleClick por parte de Google permite a Google y a sus socios mostrar anuncios a tus usuarios basados en su visita a tus sitios y/o a otros sitios en Internet.",
   "privacyp11": "Los usuarios pueden optar por no utilizar la cookie DoubleClick para publicidad basada en intereses visitando Configuración de anuncios. (Alternativamente, puedes dirigir a los usuarios a optar por no utilizar cookies de terceros para publicidad basada en intereses visitando aboutads.info.)",
   "privacyp12": "Contacto",
-  "privacyp13": "Para contactarnos, utiliza el correo electrónico: ",
-  "email": "nyarcodetechnologies",
+  "privacyp13": "Para contactarnos, utiliza el correo electrónico ",
+  "email": "NyarCode Technologies",
   "analitycspolicy": "https://support.google.com/analytics/answer/6004245?hl=es",
   "admobpolicy": "https://support.google.com/admob/answer/6128543?hl=es"
 }

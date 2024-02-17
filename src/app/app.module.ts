@@ -12,9 +12,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { HashLocationStrategy, LocationChangeListener, LocationStrategy } from '@angular/common';
+import {
+  HashLocationStrategy,
+  LocationChangeListener,
+  LocationStrategy,
+  APP_BASE_HREF,
+} from '@angular/common';
 import { TrisergiComponent } from './components/trisergi/trisergi.component';
-
 
 @NgModule({
   declarations: [
@@ -23,7 +27,7 @@ import { TrisergiComponent } from './components/trisergi/trisergi.component';
     AboutmeComponent,
     KnowledgesComponent,
     ExperienceComponent,
-    TrisergiComponent
+    TrisergiComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,18 +38,15 @@ import { TrisergiComponent } from './components/trisergi/trisergi.component';
       loader: {
         provide: TranslateLoader,
         useFactory: httpTranslateLoader,
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
-    HttpClientModule
-
+    HttpClientModule,
   ],
-  providers: [HttpClientModule, {
-    provide: LocationStrategy, useClass: HashLocationStrategy
-  }],
-  bootstrap: [AppComponent]
+  providers: [HttpClientModule, { provide: APP_BASE_HREF, useValue: '' }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }

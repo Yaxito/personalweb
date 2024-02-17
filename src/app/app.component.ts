@@ -34,6 +34,7 @@ export class AppComponent {
   randomInteger(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
   randomImage() {
     this.randomImageNumber = this.randomInteger(0, 3);
     if (this.randomImageNumber == 0) {
@@ -46,6 +47,7 @@ export class AppComponent {
       this.randomImageSrc = 'assets/png/luffy.png';
     }
   }
+
   randomLogo() {
     this.randomLogoNumber = this.randomInteger(0, 2);
     if (this.randomLogoNumber == 0) {
@@ -56,47 +58,48 @@ export class AppComponent {
       this.randomLogoSrc = 'assets/png/face3.png';
     }
   }
+
   randomImageManual() {
     this.randomImageNumber = this.randomInteger(0, 3);
     if (this.randomImageNumber == 0) {
       this.randomImageSrc = 'assets/png/4stars.png';
-      Swal.fire({
-        grow: 'row',
-        backdrop: false,
-        showConfirmButton: false,
-        imageUrl: 'assets/gifs/goku.gif',
-        timer: 3000,
-      });
+      // Swal.fire({
+      //   grow: 'row',
+      //   backdrop: false,
+      //   showConfirmButton: false,
+      //   imageUrl: 'assets/gifs/goku.gif',
+      //   timer: 3000,
+      // });
       this.randomLogo();
     } else if (this.randomImageNumber == 1) {
       this.randomImageSrc = 'assets/png/pokeball.png';
-      Swal.fire({
-        grow: 'row',
-        backdrop: false,
-        showConfirmButton: false,
-        imageUrl: 'assets/gifs/pikachu.gif',
-        timer: 3000,
-      });
+      // Swal.fire({
+      //   grow: 'row',
+      //   backdrop: false,
+      //   showConfirmButton: false,
+      //   imageUrl: 'assets/gifs/pikachu.gif',
+      //   timer: 3000,
+      // });
       this.randomLogo();
     } else if (this.randomImageNumber == 2) {
       this.randomImageSrc = 'assets/png/donut.png';
-      Swal.fire({
-        grow: 'row',
-        backdrop: false,
-        showConfirmButton: false,
-        imageUrl: 'assets/gifs/simpsons.gif',
-        timer: 3000,
-      });
+      // Swal.fire({
+      //   grow: 'row',
+      //   backdrop: false,
+      //   showConfirmButton: false,
+      //   imageUrl: 'assets/gifs/simpsons.gif',
+      //   timer: 3000,
+      // });
       this.randomLogo();
     } else if (this.randomImageNumber == 3) {
       this.randomImageSrc = 'assets/png/luffy.png';
-      Swal.fire({
-        grow: 'row',
-        backdrop: false,
-        showConfirmButton: false,
-        imageUrl: 'assets/gifs/luffy.gif',
-        timer: 3000,
-      });
+      // Swal.fire({
+      //   grow: 'row',
+      //   backdrop: false,
+      //   showConfirmButton: false,
+      //   imageUrl: 'assets/gifs/luffy.gif',
+      //   timer: 3000,
+      // });
       this.randomLogo();
     }
   }

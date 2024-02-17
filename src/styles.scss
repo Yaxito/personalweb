@@ -159,6 +159,14 @@ div.content {
   transform: scale(1.1);
 }
 
+.zoom-big {
+  transition: transform 0.3s;
+}
+
+.zoom-big:hover {
+  transform: scale(1.3);
+}
+
 .spin {
   display: block;
   position: fixed;

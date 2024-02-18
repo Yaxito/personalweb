@@ -29,7 +29,7 @@ const routes: Routes = [
     component: ExperienceComponent,
   },
   {
-    path: 'trisergi',
+    path: 'trisergicoachapp',
     component: TrisergiComponent,
   },
 ];

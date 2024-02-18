@@ -12,12 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { KnowledgesComponent } from './components/knowledges/knowledges.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import {
-  HashLocationStrategy,
-  LocationChangeListener,
-  LocationStrategy,
-  APP_BASE_HREF,
-} from '@angular/common';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { TrisergiComponent } from './components/trisergi/trisergi.component';
 
 @NgModule({
@@ -43,7 +38,10 @@ import { TrisergiComponent } from './components/trisergi/trisergi.component';
     }),
     HttpClientModule,
   ],
-  providers: [HttpClientModule, { provide: APP_BASE_HREF, useValue: '' }],
+  providers: [
+    HttpClientModule,
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
